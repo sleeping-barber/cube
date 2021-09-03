@@ -1,8 +1,14 @@
 package worker
 
+import (
+	"fmt"
+
+	"github.com/golang-collections/collections/queue"
+)
+
 type Worker struct {
-	Queue queue.Queue
-	Db map[uuid]Task
+	Queue     queue.Queue
+	Db        map[uuid]Task
 	TaskCount int
 }
 
