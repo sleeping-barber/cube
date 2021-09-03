@@ -1,5 +1,9 @@
 package task
 
+import (
+	"github.com/google/uuid"
+)
+
 type State int
 
 const (
