@@ -15,7 +15,13 @@ const (
 )
 
 type Task struct {
-	ID uuid.UUID
-	Name string
-	State State
+	ID            uuid.UUID
+	Name          string
+	State         State
+	Image         string
+	Memory        int
+	Disk          int
+	ExposedPort   nat.PortSet
+	PortBindings  map[string]string
+	RestartPolicy string
 }
