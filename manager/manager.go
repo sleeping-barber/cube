@@ -1,6 +1,9 @@
 package manager
 
-import "github.com/golang-collections/collections/queue"
+import (
+	"github.com/golang-collections/collections/queue"
+	"github.com/google/uuid"
+)
 
 type Manager struct {
 	Pending       queue.Queue
