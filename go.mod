@@ -8,4 +8,7 @@ require (
 	github.com/google/uuid v1.3.0
 )
 
-require github.com/stretchr/testify v1.7.0 // indirect
+require (
+	github.com/docker/docker v20.10.8+incompatible // indirect
+	github.com/stretchr/testify v1.7.0 // indirect
+)

@@ -2,13 +2,16 @@ package worker
 
 import (
 	"fmt"
+	"github.com/google/uuid"
+	"github.com/sleeping-barber/cube/task"
 
 	"github.com/golang-collections/collections/queue"
 )
 
 type Worker struct {
+	Db        map[uuid.UUID]task.Task
+	Name      string
 	Queue     queue.Queue
-	Db        map[uuid]Task
 	TaskCount int
 }
 
