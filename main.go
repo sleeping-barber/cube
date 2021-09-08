@@ -137,6 +137,6 @@ func stopContainer(d *task.Docker) *task.DockerResult {
 		fmt.Printf("%v\n", result.Error)
 		return nil
 	}
-	fmt.Printf("Container %s has been stopped and removed\n", result.ContainerId)
+	fmt.Printf("Container %s has been stopped and removed\n", d.ContainerId)
 	return &result
 }
